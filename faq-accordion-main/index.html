@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.google.com/specimen/Work+Sans" rel="stylesheet">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      font-family: 'Work Sans';
+      background-image: url(/assets/images/background-pattern-desktop.svg);
+      background-repeat:repeat-x;
+      max-width: 1440px;
+    }
+  </style>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/estilo.css">
+  <link rel="stylesheet" href="/css/responsivo.css">
+</head>
+<body>
+
+  <div class="area">
+    <div class="header">
+      <img class="starimg" src="/assets/images/icon-star.svg" alt="">
+      <p class="title">FAQs</p>
+    </div>
+
+    <div class="line" onclick="question(1)">
+      <div class="textline"><a>O que é Frontend Mentor e como ele pode me ajudar?</a></div>
+      <div class="imgline"><img class="lineImg" id="lineImg1" src="/assets/images/icon-plus.svg"></img></div>
+    </div>
+    <div class="hideLine" id="hideLine1">
+      <p class="answer">Frontend Mentor oferece desafios realistas de programação para ajudar desenvolvedores melhorarem suas habilidades em códigos frontend com projetos em HTML, CSS e JavaScript. Ele é aplicado para todos os níveis e ideal para construção de um portifólio.</p>
+    </div>
+
+    <div class="line" onclick="question(2)">
+      <div class="textline"><a>O Frontend Mentor é gratuito?</a></div>
+      <div class="imgline"><img class="lineImg" id="lineImg2" src="/assets/images/icon-plus.svg"></img></div>
+    </div>
+    <div class="hideLine" id="hideLine2">
+      <p class="answer">A maioria dos desafios são gratuitos, alguns são premium e precisam da assinatura "Pro" para acessar.</p>
+    </div>
+
+    <div class="line" onclick="question(3)">
+      <div class="textline"><a>Posso usar os projetos do Frontend Mentor no meu portifólio?</a></div>
+      <div class="imgline"><img class="lineImg" id="lineImg3" src="/assets/images/icon-plus.svg"></img></div>
+    </div>
+    <div class="hideLine" id="hideLine3">
+      <p class="answer">Claro! Sinta-se a vontade para usar tudo que você criar no seu portifólio. Ajudar os desenvolvedores inserirem em seu portifólio projetos com a aparência profissional foi uma das razões para plataforma ter sido criada!</p>
+    </div>
+
+    <div class="line" onclick="question(4)">
+      <div class="textline"><a>Como posso conseguir ajuda caso eu fique travado em um desafio?</a></div>
+      <div class="imgline"><img class="lineImg" id="lineImg4" src="/assets/images/icon-plus.svg"></img></div>
+    </div>
+    <div class="hideLine" id="hideLine4">
+      <p class="answer">A melhor e mais rápida maneira de conseguir ajuda em um desafio é entrar no servidor do Discord. Lá estão milhares de outros programadores, é um ótimo lugar para sanar suas dúvidas!</p>
+    </div>
+    
+
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/StifHaugi">Pedro Bruno dos Santos</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

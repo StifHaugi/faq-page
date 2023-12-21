@@ -1,0 +1,78 @@
+body{
+    background-color: #F9EEFF;
+    max-width: 1440px;
+}
+@font-face {
+    font-family: "Work Sans";
+    src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+div.textline a{
+    font-size: 18px;
+    font-family: Work Sans;
+    font-weight: bold; 
+}
+a:hover{
+       color: #BA4FE1;
+       font-weight: bold
+}
+   
+p.answer{
+   font-size: 16px;
+   color:hsl(292, 16%, 49%);
+   text-align: justify;
+}
+
+p.title{
+    padding-left: 15px;
+    font-size:60px;
+    text-align: justify;
+    font-weight: bold;
+    color:hsl(292, 42%, 14%);
+ }
+
+div.area{
+    width: 750px;
+    padding: 25px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+div.area div.header{
+    display:flex;
+    align-items: center;
+}
+
+div.area div.line{
+    display:flex;
+    align-items:center;  
+}
+div.area div.line div.textline{
+    width: 600px;
+    height: 50px;
+    display:flex;
+    align-items:center;  
+}
+div.area div.line div.imgline{
+    width: 100px;
+    display: inline-flex;
+    right: 50%;  
+    flex-direction: row-reverse;
+}
+
+div.area div.hideLine{
+    display:none;
+    text-align: justify;
+    width: 90%;
+}
+
+.attribution{
+    color:black;
+    bottom: 20px;
+    left:auto;
+    position: fixed;
+    width: 100%;
+}
